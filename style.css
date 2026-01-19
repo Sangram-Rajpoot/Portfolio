@@ -122,10 +122,17 @@ img {
   box-shadow: 0 0 20px 10px rgba(37, 32, 32, 0.6); /* Red blast shadow */
   transform: scale(1.5); /* Slightly increase size to simulate a "blast" */
 }
+/* ===== FIX NAVBAR OVERLAP ON MOBILE ===== */
+@media (max-width: 991px) {
+  body {
+    padding-top: 70px; /* height of fixed navbar */
+  }
+}
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .navbar {
     min-height: 100vh;
+      padding-top: 70px; /* height of navbar */
     width: 240px;
   }
   /* nav image  */
