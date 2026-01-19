@@ -16,6 +16,21 @@
   --color-brand: #88c0d0; /* Soft, slightly desaturated blue */
   --color-brand2: #a3be8c; /* Muted green for a subtle organic touch */
 }
+/* Improve paragraph readability inside cards */
+.card-custom-content p {
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+.card-custom-content h4 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/* Uniform card styling */
+.bg-base {
+  border-radius: 18px;
+  padding: 1.8rem;
+}
+
 .cursor-dot {
   width: 10px;
   height: 10px;
@@ -624,5 +639,19 @@ textarea.form-control {
   background: #46c1f6;
 }
 
+/* ========================= */
+/* FINAL UI IMPROVEMENTS */
+/* ========================= */
+
+
+/* Scroll-to-top button mobile adjustment */
+@media (max-width: 576px) {
+  #scrollTopBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}
 
 /* the social media end */
