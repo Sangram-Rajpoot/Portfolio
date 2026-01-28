@@ -152,20 +152,23 @@ img {
   }
   /* nav image  */
   .navbar-brand img {
-    border: 8px solid var(--color-brand);
-    border-radius: 50%;
-    width: 200px; /* Set width */
-    height: 200px;
-    transition: transform 1.5s ease;
-    transform-style: preserve-3d;
-  }
-  .content-wrapper {
-    padding-left: 240px;
-  }
+  border: 8px solid var(--color-brand);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
 }
+
+.content-wrapper {
+  padding-left: 240px;
+}
+
 .navbar-brand img:hover {
-  transform: scale(1.02) rotate(360deg); /* Zoom OUT effect (90% of original size) */
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
+
 /* nave end   */
 .full-height {
   min-height: 100vh;
